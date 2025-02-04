@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="/css/login/d_main.css">
+        <link rel="stylesheet" href="/css/login/d_navbar.css">
+        <link rel="stylesheet" href="/css/login/d_errpop.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+
+    <body>
+        <nav>
+            <div class="d-err-popup-pnl-main">
+                <div class="d-err-popup-cnt">
+                    <div class="d-popup-cnts">
+                        <p class="d-popup-cnt-ttl"></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="d-login-form">
+                <div class="d-login-form-cont">
+                    <p class="d-ttl-lgn">User Login</p>
+                    <p class="d-ttl-err">‎</p>
+                    <input class="d-usr-inpt" type="email" id="email" name="email" placeholder="Email">
+                    <input class="d-usr-inpt" type="password" id="password" name="password" placeholder="Password">
+
+                    <button class="d-login-btn" type="submit" id="d-login-button">Login</button>
+                </div>
+            </div>
+        </main>
+
+        <script type="module" src="../scripts/login/d_function.js"></script>
+        <script type="module" src="../scripts/usefull/d_errhandler.js"></script>
+    </body>
+
+</html>

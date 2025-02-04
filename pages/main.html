@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="/css/main/m_navbar.css">
+        <link rel="stylesheet" href="/css/main/m_crtacc.css">
+        <link rel="stylesheet" href="/css/main/m_errpop.css">
+        <link rel="stylesheet" href="/css/main/m_fltnstt.css">
+        <link rel="stylesheet" href="/css/main/m_msngr.css">
+        <link rel="stylesheet" href="/css/main/m_stflst.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+
+    <body>
+        <nav>
+            <div class="m-ttle-page">
+                <p class="m-ttle-p">K-A.I. Control Panel</p>
+            </div>
+
+            <div class="m-tgl-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="m-logout-pnl hidden">
+                <a id="m-logout-acc-btn">Logout</a>
+            </div>
+
+            <div class="m-drp-dwn-pnl">
+                <a class="active" id="m-ddp-btn-1">Button 1</a>
+                <a class=" " id="m-ddp-btn-2">Button 2</a>
+                <a class=" " id="m-ddp-btn-3">Button 3</a>
+                <a class=" " id="m-ddp-btn-4">Manage Requests</a>
+                <a class=" " id="m-ddp-btn-5">Create Account</a>
+
+                <div class="m-ddp-logout-btn">
+                    <a id="m-ddp-logout-btn">Logout</a>
+                </div>
+            </div>
+
+            <div class="m-err-popup-pnl-main">
+                <div class="m-err-popup-cnt">
+                    <div class="m-popup-cnts">
+                        <p class="m-popup-cnt-ttl"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-fltn-stts-main">
+                <div class="m-fltn-stts-cnt">
+                    <div class="m-fltn-cnts close">
+                        <div class="m-fltn-closebtn">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </div>
+
+                        <div class="m-fltn-btn-container">
+                            <div class="m-fltn-ntfbtn">
+                                <i class="fa-solid fa-bell"></i>
+                                <div class="m-fltn-ntf-cnt">
+                                    <p class="m-fltn-ntf-ttl"></p>
+                                </div>
+                            </div>
+
+                            <div class="m-fltn-msgbtn">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div class="m-fltn-msg-cnt">
+                                    <p class="m-fltn-msg-ttl"></p>
+                                </div>
+                            </div>
+
+                            <div class="m-fltn-frnds">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-stf-lst-pnl-main hidden">
+                <div class="m-stf-lst-pnl-cnts">
+                    <div class="m-stf-lst-cnts close">
+                        <div class="m-stf-lst-top-pnl">
+                            <p class="m-stf-lst-ttx">Staff List</p>
+                            <div class="m-stf-lst-clsbtn">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </div>
+
+                        <div class="m-stf-scrl-cnt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-msgr-pnl-main hidden">
+                <div class="m-msgr-pnl-cnts">
+                    <div class="m-msgr-cnts close"> 
+                        <div class="m-msgr-top-pnl">
+                            <p class="m-msg-top-usr-msg" id=""></p>
+                            <div class="m-msgr-clsbtn">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </div>
+    
+                        <div class="m-msgr-bot-pnl">
+                            <div class="m-msgr-scrl-cnt">
+                            </div>
+                            <div class="m-msgr-inp-tray">
+                                <input class="m-msg-inpt" type="text" id="messagebox" name="message" placeholder="Enter Message">
+                                
+                                <div class="m-snd-msg-btn">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <aside>
+            <div class="m-side-pnl-usr">
+                <p class="m-side-pnl-ttl" id=""></p>
+            </div>
+
+            <div class="m-side-pnl-btns">
+                <a class="active" id="m-ssp-btn-1">Button 1</a>
+                <a class=" " id="m-ssp-btn-2">Button 2</a>
+                <a class=" " id="m-ssp-btn-3">Button 3</a>
+                <a class=" " id="m-ssp-btn-4">Manage Requests</a>
+                <a class=" " id="m-ssp-btn-5">Create Account</a>
+            </div>
+
+            <div class="m-logout-btn-panel">
+                <a id="m-ssp-btn-logout">Logout</a>
+            </div>
+        </aside>
+
+        <main>
+            <!-- Create Account Section -->
+
+            <div class="m-crt-acc-pnl-main">
+                <div class="m-crt-acc-cnt">
+                    <div class="m-acc-cnts">
+                        <p class="m-crt-acc-ttl">Create Account</p>
+                        <p class="m-crt-acc-wrn"></p>
+                        <div class="m-crt-acc-cnt-rows">
+                            <input class="m-acc-input" type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                            <input class="m-acc-input" type="text" id="middle-name" name="middle-name" placeholder="Middle Name" required>
+                            <input class="m-acc-input" type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                        </div>
+
+                        <div class="m-crt-acc-cnt-rows">
+                            <input class="m-acc-input" type="email" id="email" name="email" placeholder="Email" required>
+                            <input class="m-acc-input" type="email" id="fixed-email" name="fixed-email" placeholder="@yahoo.com" readonly>
+                        </div>
+                        <div class="m-crt-acc-cnt-rows">
+                            <input class="m-acc-input" type="password" id="password" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="m-crt-acc-cnt-rows">
+                            <select class="m-crt-acc-role-slct" id="select-role">
+                                <option value="" disabled selected hidden>Select Role</option>
+                                <option value="staff">Staff</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                            <select class="m-crt-acc-gender-slct" id="select-gender">
+                                <option value="" disabled selected hidden>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+    
+                        <button class="m-crt-acc-crt-btn hidden" type="submit">Create Account</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="/scripts/main/m_functions.js"></script>
+        <script type="module" src="/scripts/usefull/m_errhandler.js"></script>
+        <script type="module" src="/scripts/main/m_fltnstt.js"></script>
+        <script type="module" src="/scripts/main/m_msgr/m_stflst.js"></script>
+        <script type="module" src="/scripts/main/m_msgr/m_sndmsg.js"></script>
+        <script type="module" src="/scripts/main/m_crtacc/m_crtacc.js"></script>
+        <script type="module" src="/scripts/main/m_crtacc/m_checkusr.js"></script>
+        <script type="module" src="/scripts/main/m_crtacc/m_crtaccvald.js"></script>
+    </body>
+</html>

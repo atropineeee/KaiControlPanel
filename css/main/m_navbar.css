@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    overflow-x: auto;
+    min-height: 100vh;
+    min-width: 813px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main";
+}
+
+nav {
+    height: 5rem;
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    background-color: #004c4c;
+    padding: 0.5em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    z-index: 100;
+}
+
+nav .m-ttle-page {
+    display: block;
+}
+
+nav .m-ttle-page p {
+    width: 340px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-column: 1;
+    height: auto;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav .m-tgl-btn {
+    display: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    grid-column: 1;
+}
+
+aside {
+    height: calc(100vh - 5rem);
+    top: 5rem;
+    position: sticky;
+    align-self: start;
+    grid-area: sidebar;
+    background-color: #66b2b2;
+}
+
+aside .m-side-pnl-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+aside .m-side-pnl-btns a {
+    text-align: center;
+    width: 100%;
+    padding: 5% 5%;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+aside .m-side-pnl-btns a:hover {
+    background-color: #006666;
+    color: #FFD700;
+}
+
+aside .m-logout-btn-panel a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 5% 5%;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+aside .m-logout-btn-panel a:hover {
+    background-color: #006666;
+    color: #ff0000;
+}
+
+aside .m-side-pnl-usr {
+    background-color: #00234c;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+aside .m-side-pnl-usr p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 25x;
+}
+
+.m-drp-dwn-pnl {
+    display: none;
+    position: absolute;
+    height: 0;
+    top: 100px;
+    left: 1rem;
+    position: absolute;
+    margin: 0 auto;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #66b2b2;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-direction: column;
+    z-index: 2;
+}
+
+.m-drp-dwn-pnl.open {
+    height: 235px;
+    display: block;
+    z-index: 2;
+}
+
+.m-drp-dwn-pnl a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 5% 5%;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.m-drp-dwn-pnl a:hover {
+    background-color: #006666;
+    cursor: pointer;
+    color: #FFD700; 
+    border-radius: 10px;
+}
+
+.m-ddp-logout-btn a:hover {
+    background-color: #006666;
+    cursor: pointer;
+    color: #ff0000; 
+}
+
+.m-drp-dwn-pnl .active {
+    background-color: #006666;
+    border-radius: 10px;
+}
+
+main {
+    grid-area: main;
+    background-color: #b2d8d8;
+}
+
+.active {
+    background-color: #006666;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 941px) {
+    .m-drp-dwn-pnl.open {
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {
+    body {
+        grid-template-columns: auto 1fr;
+    }
+
+    nav .m-ttle-page {
+        display: none;
+    }
+
+    nav .m-tgl-btn {
+        display: block;
+    }
+
+    aside {
+        position: fixed;
+        width: 200px;
+        display: none;
+    }
+
+    .m-drp-dwn-pnl {
+        display: block;
+    }
+}

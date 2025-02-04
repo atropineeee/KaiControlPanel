@@ -1,0 +1,144 @@
+.m-stf-lst-pnl-main {
+    display: flex;
+    position: fixed;
+    width: auto;
+    right: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    justify-content: flex-end;
+    z-index: 0;
+    margin-top: 650px;
+}
+
+.m-stf-lst-pnl-cnts {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-end; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.m-stf-lst-cnts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 210px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: white;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.m-stf-lst-ttx {
+    width: 100%;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.m-stf-lst-top-pnl {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    padding: 0px 8px;
+    background-color: #B2A5FF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.m-stf-lst-top-pnl i {
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.m-stf-scrl-cnt {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 8px 8px;
+    flex: 1;
+    overflow-y: scroll;
+    flex-direction: column;
+    position: relative;
+}
+
+.m-stf-scrl-cnt::-webkit-scrollbar {
+    width: 5px;
+}
+
+.m-stf-scrl-cnt::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 30px;
+}
+
+.m-stf-scrl-cnt::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.m-msgr-top-pnl i {
+    right: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.m-stf-usr-idx {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+    background-color: rgb(165, 165, 255);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.m-stf-usr-idx:hover {
+    background-color: rgb(95, 95, 145);
+}
+
+.m-stf-usr-idx i {
+    font-size: 28px;
+    padding: 10px 10px;
+}
+
+.m-stf-usr-idx p {
+    font-size: 14px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+@keyframes SslideToLeft {
+    0% {
+        transform: translateX(350px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+@keyframes SslideToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(350px);
+    }
+}
+
+.m-stf-lst-cnts {
+    animation: SslideToLeft 0.6s ease-in-out forwards;
+}
+
+.m-stf-lst-cnts.close {
+    animation: SslideToRight 0.6s ease-in-out forwards;
+}
+
+.hidden {
+    display: none;
+}
+
